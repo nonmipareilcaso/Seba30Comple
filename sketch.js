@@ -167,7 +167,7 @@ class Confetti {
     else if(this.opacity < 0 || this.y > (height + 20)){
       this.x = random(-6, width + 6);
       this.y = random(-40, height - 2);
-      this.rad = random(10, 20);
+      this.rad = random(width/20, width/9);
       this.vx = random(-2, 2);
       this.vy = (this.rad * 0.25) + random(-2, 2);
     this.opacity = 0;
