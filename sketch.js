@@ -63,9 +63,9 @@ function testoRingraziamenti(){
   push();
   textFont(myFontAmatic);
   fill(255, 100);
-  textSize(width / 40);
+  textSize(width / 30);
   textAlign(CENTER, CENTER);
-  text("Da parte di: Francesca, Alberto, Valentina, Enrico, Laura,\n Chiara, Gioacchino, Giovanna, Gionata", width/2, height - (width / 20) - 3);
+  text("Da parte di: Francesca, Alberto, Valentina, Enrico, Laura,\n Chiara, Gioacchino, Giovanna, Gionata", width/2, height - (width / 15) - 4);
   pop();
 }
 
