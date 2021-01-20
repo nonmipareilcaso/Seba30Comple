@@ -32,7 +32,7 @@ let thirties = [];
 function setup() {
   let myCanvas = createCanvas(windowWidth, windowHeight);
   frameRate(30);
-  for(let i = 0; i < 250; i++){
+  for(let i = 0; i < 80; i++){
     confettis[i] = new Confetti();
   }
   opacita = 0;
@@ -43,7 +43,7 @@ function draw() {
   background(0);
   testoAuguri();
   testoRingraziamenti();
-  for(let i = 0; i < 250; i++){
+  for(let i = 0; i < 80; i++){
     confettis[i].display();
   }
   
@@ -118,6 +118,7 @@ class scritta30 {
     }
     textFont(myFontCoiny);
     textSize(width / 8);
+    textAlign(CENTER, CENTER);
     text("30", this.x, this.y);
     pop();
     this.opacity = this.opacity + this.deltaop;
@@ -130,7 +131,7 @@ class Confetti {
     this.colore = int(random(1, 6));
     this.x = random(-6, width + 6);
     this.y = random(-40, height - 2);
-    this.rad = random(10, 20);
+    this.rad = random(width/20, width/9);
     this.vx = random(-2, 2);
     this.vy = (this.rad * 0.25) + random(-2, 2);
     this.opacity = 0;
